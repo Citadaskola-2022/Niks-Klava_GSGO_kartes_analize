@@ -1,20 +1,20 @@
 {
-    "name": "citadaskola/prog2",
-    "description": "Base project for Prog 2",
+    "name": "citadaskola/cs-go-map-analyzer",
+    "description": "CSGO Map analyzer",
     "type": "project",
     "license": "MIT",
     "authors": [
         {
-            "name": "Roberts Rozkalns",
-            "email": "roberts.rozkalns@citadaskola.lv"
+            "name": "Niks Klava",
+            "email": "niks.klava@citadaskola.lv"
         }
     ],
     "minimum-stability": "stable",
     "require": {
         "php": "8.1.*",
-        "ramsey/uuid": "^4.5",
-        "doctrine/inflector": "^2.0",
-        "vlucas/phpdotenv": "^5.5"
+        "vlucas/phpdotenv": "^5.5",
+        "ext-sqlite3": "*",
+        "rakit/validation": "^1.4"
     },
     "autoload": {
         "psr-4": {

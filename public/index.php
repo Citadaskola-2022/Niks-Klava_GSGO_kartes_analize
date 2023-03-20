@@ -2,8 +2,10 @@
 
 declare(strict_types=1);
 
-require __DIR__ . '/../bootstrap/app.php';
+define('ROOT', dirname(__DIR__));
 
-require __DIR__ .  '/functions.php';
+session_start();
 
-require __DIR__ .  '/../router.php';
+require ROOT . '/bootstrap/app.php';
+
+require ROOT . '/router.php';

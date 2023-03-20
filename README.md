@@ -13,8 +13,9 @@ This is a base structure for the project.
 ```bash
 cp .env.example .env
 docker compose up -d --build
-docker exec -it project-app-1 composer install
-
+docker compose exec app composer install
+docker compose exec app composer dump-autoload
+docker compose exec app php bin/add_user.php  
 ```
 
 visit @ http://localhost:8001
